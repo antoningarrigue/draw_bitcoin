@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Draw Bitcoin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="stage">
+      <div class="ui-frame" id="ui-frame">
+        <div class="overlay-compare" id="overlay"></div>
+        <div class="ruler-overlay" id="ruler"></div>
+
+        <header class="top-row">
+          <h1>DRAW BITCOIN</h1>
+          <button class="pixel-btn wallet">CONNECT WALLET</button>
+        </header>
+
+        <section class="layout-grid">
+          <aside class="panel left-panel">
+            <h2>PALETTE BTC</h2>
+            <ul class="palette-list">
+              <li><span class="strip gold"></span><span>Gold</span><strong>0.01000</strong></li>
+              <li><span class="strip silver"></span><span>Silver</span><strong>0.00100</strong></li>
+              <li><span class="strip bronze"></span><span>Bronze</span><strong>0.00010</strong></li>
+              <li><span class="strip violet"></span><span>Violet</span><strong>0.00005</strong></li>
+              <li><span class="strip blue"></span><span>Blue</span><strong>0.00003</strong></li>
+              <li><span class="strip green"></span><span>Green</span><strong>0.00002</strong></li>
+              <li><span class="strip red"></span><span>Red</span><strong>0.00001</strong></li>
+              <li><span class="strip black"></span><span>Black</span><strong>FREE</strong></li>
+            </ul>
+            <p class="hint">Hold <mark>ALT</mark> to erase</p>
+          </aside>
+
+          <section class="panel center-panel">
+            <h2>CANVAS 32X32</h2>
+            <div class="canvas-wrap">
+              <div id="pixel-grid" class="pixel-grid" aria-label="32 by 32 canvas grid"></div>
+            </div>
+            <div class="button-row">
+              <button class="pixel-btn">RESET</button>
+              <button class="pixel-btn">EXPORT</button>
+              <button class="pixel-btn">JSON</button>
+            </div>
+          </section>
+
+          <aside class="panel right-panel">
+            <h2>ARTWORK VALUE</h2>
+            <div class="progress-box">
+              <div class="bar"></div>
+              <p>0% filled · 0 / 1024 px</p>
+            </div>
+
+            <div class="value-table">
+              <div><span>Gold</span><span>0</span><strong>0.00000</strong></div>
+              <div><span>Silver</span><span>0</span><strong>0.00000</strong></div>
+              <div><span>Bronze</span><span>0</span><strong>0.00000</strong></div>
+              <div><span>Violet</span><span>0</span><strong>0.00000</strong></div>
+              <div><span>Blue</span><span>0</span><strong>0.00000</strong></div>
+              <div><span>Green</span><span>0</span><strong>0.00000</strong></div>
+              <div><span>Red</span><span>0</span><strong>0.00000</strong></div>
+              <div><span>Black</span><span>0</span><strong>0.00000</strong></div>
+            </div>
+
+            <div class="total-box">
+              <h3>TOTAL</h3>
+              <p class="btc">0.00000 BTC</p>
+              <p class="fee">+5% fee</p>
+            </div>
+
+            <button class="mint-btn">MINT NOW</button>
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
